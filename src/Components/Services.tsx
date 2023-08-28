@@ -14,7 +14,7 @@ function Services() {
   ];
   return (
     <div className="mt-[150px] text-primary flex flex-col justify-center items-center">
-      <h1>
+      <h1 className="text-4xl">
         ჩვენი <span className="text-[#88FEE7]">სერვისები</span>
       </h1>
 
