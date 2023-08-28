@@ -29,3 +29,8 @@ body {
   padding: 25px 15px;
   font-family: "firaCo", sans-serif;
 }
+
+.slick-dots li button::before{
+  font-size: 12px;
+  padding-top: 10px;
+}
