@@ -18,7 +18,7 @@ function Services() {
         ჩვენი <span className="text-[#88FEE7]">სერვისები</span>
       </h1>
 
-      <div className="flex flex-wrap gap-4 mt-[40px]">
+      <div className="flex flex-wrap gap-4 mt-[40px] justify-center">
         {serviceItems.map((item, index) => (
           <ServiceItem
             key={index}

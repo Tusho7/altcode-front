@@ -1,3 +1,4 @@
+import ExperiencedAndTrusted from "./Components/ExperiencedAndTrusted"
 import Header from "./Components/Header"
 import Services from "./Components/Services"
 import SliderMenu from "./Components/SliderMenu"
@@ -9,6 +10,7 @@ function App() {
     <Header/>
     <SliderMenu/>
     <Services />
+    <ExperiencedAndTrusted/>
     </>
   )
 }

@@ -20,10 +20,10 @@
 body {
   width: 100vw;
   min-height: 100vh;
+  overflow-x: hidden;
   background-image: radial-gradient(
-    at top left,
     var(--e-global-color-first) 0%,
-    var(--e-global-color-second) 66%
+    var(--e-global-color-second) 80%
   );
   padding: 25px 15px;
   font-family: "firaCo", sans-serif;
