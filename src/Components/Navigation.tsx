@@ -1,0 +1,45 @@
+import { useState } from "react";
+import HamburgerIcon from "../assets/hamburger.png";
+import CybercitiLogo from "../assets/cybercity-logo.png";
+import xLogo from "../assets/xLogo.png";
+
+function Navigation() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <div className="relative">
+      <button onClick={toggleMenu}>
+        <img src={HamburgerIcon} className="w-[35px] h-[30px]" alt="Menu" />
+      </button>
+
+      {isMenuOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50">
+          <div className="p-6 w-full h-full absolute  rounded-md shadow-lg bg-[#000913] text-white">
+            <div className="mb-6 h-full">
+              <div className="flex justify-between">
+                <img src={CybercitiLogo} className="w-[150px] h-[30px]" />
+                <img
+                  src={xLogo}
+                  className="w-[30px] h-[30px] bg-[#8CFEE7] p-2 rounded-md"
+                  onClick={() => setIsMenuOpen(false)}
+                />
+              </div>
+              <ul className="mt-20">
+                <li>სერვისები</li>
+                <li className="pt-[30px]">კონტაქტი</li>
+                <li className="pt-[30px]">რა არის ALTCODE ?</li>
+                <li className="pt-[30px]">SERVICE</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default Navigation;

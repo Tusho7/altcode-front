@@ -1,3 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+:root {
+  --e-global-color-first: #214345;
+  --e-global-color-second: #000913;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  background-image: radial-gradient(
+    at top left,
+    var(--e-global-color-first) 0%,
+    var(--e-global-color-second) 66%
+  );
+  padding: 25px 15px;
+  font-family: "firaCo", sans-serif;
+}
