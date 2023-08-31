@@ -14,7 +14,7 @@ function ExperiencedAndTrusted() {
           პირველი ქართული პროგრამა ALTDESK
         </h1>
 
-        <p className="text-primary text-3xl pt-[15px]">
+        <p className="text-primary text-3xl pt-[15px] text-center">
           Experienced and <span className="text-[#8CFEE7]">Trusted</span>
         </p>
 
@@ -24,7 +24,7 @@ function ExperiencedAndTrusted() {
           himenaeos iaculis mi tellus nascetur convallis.
         </p>
 
-        <p className="leading-4 hover:text-[#D9E767] hover:transform hover:translate-y-[-5px] transition-transform hover:cursor-pointer">
+        <p className="text-center leading-4 hover:text-[#D9E767] hover:transform hover:translate-y-[-5px] transition-transform hover:cursor-pointer">
           <span className="text-primary hover:text-[#D9E767]">Read More</span>
           <span className="block h-[1px] w-20 mt-1 bg-primary mx-auto"></span>
         </p>
