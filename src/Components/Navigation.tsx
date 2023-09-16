@@ -33,6 +33,14 @@ function Navigation() {
                 <li className="pt-[30px]">კონტაქტი</li>
                 <li className="pt-[30px]">რა არის ALTCODE ?</li>
                 <li className="pt-[30px]">SERVICE</li>
+                <div className="flex justify-between items-center mt-10">
+                  <button className="text-white p-5 bg-slate-800 rounded-full">
+                    შესვლა
+                  </button>
+                  <button className="text-white p-5 bg-slate-800 rounded-full">
+                    რეგისტრაცია
+                  </button>
+                </div>
               </ul>
             </div>
           </div>
