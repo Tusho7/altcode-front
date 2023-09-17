@@ -35,8 +35,6 @@ function App() {
       setUser(response.data.user);
       setIsLoggedIn(true);
       navigate("/");
-      console.log(response.data);
-
       console.log("Register success");
     } catch (error: any) {
       if (error.response && error.response.data) {
@@ -57,7 +55,6 @@ function App() {
     setUser(null);
   };
 
-  console.log(user);
   return (
     <>
       <Routes>
