@@ -40,7 +40,7 @@ function ExperiencedAndTrusted() {
         </div>
       </div>
 
-      <div className="lg:flex gap-64 mt-40 border-2 border-[#253245] p-2 rounded-xl">
+      <div className="hidden lg:flex gap-64 mt-40 border-2 border-[#253245] p-2 rounded-xl">
         <div className="flex">
           <img src={ExperiencedLogo1} className="w-64" />
           <img src={ExperiencedLogo2} className="w-64" />
@@ -67,7 +67,7 @@ function ExperiencedAndTrusted() {
           </p>
         </div>
       </div>
-      <div className="relative flex justify-center items-center border-[2px] border-[#548082] bg-[#152D32] rounded-3xl w-[855px] p-8 pb-[80px] mt-[50px] mx-auto">
+      <div className="hidden lg:flex relative justify-center items-center border-[2px] border-[#548082] bg-[#152D32] rounded-3xl w-[855px] p-8 pb-[80px] mt-[50px] mx-auto">
         <h1 className="text-3xl text-primary w-[540px] text-center">
           ჩვენ გაგიმარტივებთ მუშაობის პროცესს
         </h1>
