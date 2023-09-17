@@ -7,7 +7,7 @@ interface FooterSectionProps {
 
 const FooterSection: React.FC<FooterSectionProps> = ({ title, items }) => {
   return (
-    <div className="flex flex-col justify-center items-start gap-3 text-[#B6B6B6] text-[14px]">
+    <div className="flex flex-col justify-center items-start gap-3 text-[#B6B6B6] text-[14px] lg:items-center">
       <button className="border border-[#253245] p-4 rounded-full text-[#8CFEE7]">
         {title}
       </button>

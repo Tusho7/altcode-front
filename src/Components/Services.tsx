@@ -13,12 +13,12 @@ function Services() {
     { title: "სატელეკომუნიკაციო სისტემები", imageSrc: ServicesLogo },
   ];
   return (
-    <div className="mt-[150px] text-primary flex flex-col justify-center items-center">
-      <h1 className="text-4xl">
+    <div className="mt-[150px] text-primary flex flex-col justify-center items-center lg:mt-[450px]">
+      <h1 className="text-4xl lg:text-5xl">
         ჩვენი <span className="text-[#88FEE7]">სერვისები</span>
       </h1>
 
-      <div className="flex flex-wrap gap-4 mt-[40px] justify-center">
+      <div className="flex flex-wrap gap-4 mt-[40px] justify-center lg:gap-6">
         {serviceItems.map((item, index) => (
           <ServiceItem
             key={index}

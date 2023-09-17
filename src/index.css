@@ -33,3 +33,9 @@ body {
   font-size: 12px;
   padding-top: 10px;
 }
+
+@media (min-width: 1024px) {
+  body{
+    padding: 25px 40px;
+  }
+}
