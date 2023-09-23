@@ -1,5 +1,6 @@
-import ServiceItem from "./ServiceItem";
-import ServicesLogo from "../assets/services.png";
+
+import ServicesLogo from "../../assets/services.png"
+import ServiceItem from "./components/ServiceItem";
 
 function Services() {
   const serviceItems = [
