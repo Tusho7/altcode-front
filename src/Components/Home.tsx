@@ -1,6 +1,6 @@
 import { MainProps } from "../types/main-props-type";
 import ExperiencedAndTrusted from "./ExperiencedAndTrusted";
-import Footer from "./Footer";
+import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import Services from "./Services";
 import SliderMenu from "./SliderMenu";
