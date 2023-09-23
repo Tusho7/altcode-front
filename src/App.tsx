@@ -3,8 +3,8 @@ import Home from "./pages/Home";
 import { useState } from "react";
 import axios from "axios";
 import { User } from "./types/user-type";
-import SignUp from "./Components/SignUp";
-import Login from "./Components/Login";
+import SignUp from "./pages/SignUp";
+import Login from "./pages/Login";
 
 function App() {
   const navigate = useNavigate();
