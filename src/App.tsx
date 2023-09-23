@@ -4,6 +4,7 @@ import { useState } from "react";
 import axios from "axios";
 import { User } from "./types/user-type";
 import SignUp from "./Components/SignUp";
+import Login from "./Components/Login";
 
 function App() {
   const navigate = useNavigate();
@@ -13,6 +14,7 @@ function App() {
   const [avatar, setAvatar] = useState<File | null>(null);
   const [user, setUser] = useState<User | null>(null);
   const [signupError, setSignupError] = useState("");
+  const [loginError, setLoginError] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleSubmitSignUp = async (
@@ -55,6 +57,30 @@ function App() {
     setUser(null);
   };
 
+  const handleLoginClick = async (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post(
+        "https://altcode-api.onrender.com/api/user/login",
+        {
+          email,
+          password,
+        },
+        {
+          headers: {
+            accept: "application/json",
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log(response.data);
+      navigate("/");
+    } catch (error) {
+      setLoginError("Wrong email or password");
+    }
+  };
+
   return (
     <>
       <Routes>
@@ -81,6 +107,19 @@ function App() {
               setPassword={setPassword}
               setAvatar={setAvatar}
               signupError={signupError}
+            />
+          }
+        />
+        <Route
+          path="/login"
+          element={
+            <Login
+              handleLoginClick={handleLoginClick}
+              email={email}
+              setEmail={setEmail}
+              password={password}
+              setPassword={setPassword}
+              loginError={loginError}
             />
           }
         />

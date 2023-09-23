@@ -56,9 +56,12 @@ function Navigation({ isLoggedIn, user, handleLogout }: MainProps) {
                     </div>
                   ) : (
                     <div className="flex justify-between items-center mt-10">
-                      <button className="text-white p-5 bg-slate-800 rounded-full">
-                        შესვლა
-                      </button>
+                      <Link to="login">
+                        <button className="text-white p-5 bg-slate-800 rounded-full">
+                          შესვლა
+                        </button>
+                      </Link>
+
                       <Link to="/signup">
                         <button className="text-white p-5 bg-slate-800 rounded-full">
                           რეგისტრაცია
