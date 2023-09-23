@@ -1,6 +1,6 @@
-import Navigation from "./Navigation";
-import CybercitiLogo from "../assets/cybercity-logo.png";
-import { MainProps } from "../types/main-props-type";
+import CybercitiLogo from "../../assets/cybercity-logo.png";
+import { MainProps } from "../../types/main-props-type";
+import Navigation from "./components/Navigation";
 
 function Header({ isLoggedIn, user, handleLogout }: MainProps) {
   return (

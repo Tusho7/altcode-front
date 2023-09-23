@@ -1,8 +1,9 @@
 import { useState } from "react";
-import HamburgerIcon from "../assets/hamburger.png";
-import { MainProps } from "../types/main-props-type";
-import IsLoggedIn from "./IsLoggedIn";
-import IsMenuOpenContainer from "./IsMenuOpenContainer";
+import HamburgerIcon from "../../../assets/hamburger.png";
+
+import { MainProps } from "../../../types/main-props-type";
+import IsMenuOpenContainer from "../components/IsMenuOpenContainer";
+import IsLoggedIn from "../components/IsLoggedIn";
 
 
 function Navigation({ isLoggedIn, user, handleLogout }: MainProps) {

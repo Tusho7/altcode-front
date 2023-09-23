@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import CybercitiLogo from "../assets/cybercity-logo.png";
-import xLogo from "../assets/xLogo.png";
+import CybercitiLogo from "../../../assets/cybercity-logo.png";
+import xLogo from "../../../assets/xLogo.png";
 
 const IsMenuOpenContainer = ({
   isLoggedIn,
