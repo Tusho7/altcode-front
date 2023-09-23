@@ -1,5 +1,5 @@
 import { Route, Routes, useNavigate } from "react-router";
-import Home from "./Components/Home";
+import Home from "./pages/Home";
 import { useState } from "react";
 import axios from "axios";
 import { User } from "./types/user-type";

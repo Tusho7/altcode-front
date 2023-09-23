@@ -1,9 +1,9 @@
 import { MainProps } from "../types/main-props-type";
-import ExperiencedAndTrusted from "./ExperiencedAndTrusted";
-import Footer from "./Footer/Footer";
-import Header from "./Header/Header";
-import Services from "./Srvices/Services";
-import SliderMenu from "./SliderMenu";
+import ExperiencedAndTrusted from "../Components/ExperiencedAndTrusted";
+import Footer from "../Components/Footer/Footer";
+import Header from "../Components/Header/Header";
+import Services from "../Components/Srvices/Services";
+import SliderMenu from "../Components/SliderMenu";
 
 const Home = ({ isLoggedIn, user, handleLogout }: MainProps) => {
   return (
