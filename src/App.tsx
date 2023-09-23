@@ -16,6 +16,7 @@ function App() {
   const [signupError, setSignupError] = useState("");
   const [loginError, setLoginError] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [, setToken] = useState("");
 
   const handleSubmitSignUp = async (
     event: React.FormEvent<HTMLFormElement>
@@ -37,6 +38,7 @@ function App() {
       setUser(response.data.user);
       setIsLoggedIn(true);
       navigate("/");
+      console.log("registration:", isLoggedIn);
       console.log("Register success");
     } catch (error: any) {
       if (error.response && error.response.data) {
@@ -55,6 +57,9 @@ function App() {
   const handleLogout = () => {
     localStorage.removeItem("token");
     setUser(null);
+    setIsLoggedIn(false);
+    console.log("user", user);
+    console.log("logout islogedin:", isLoggedIn);
   };
 
   const handleLoginClick = async (e: { preventDefault: () => void }) => {
@@ -66,6 +71,7 @@ function App() {
         {
           email,
           password,
+          username,
         },
         {
           headers: {
@@ -74,7 +80,30 @@ function App() {
           },
         }
       );
-      console.log(response.data);
+      const { token } = response.data;
+      if (!token) {
+        throw new Error("No token received from the server");
+      }
+      if (!token) {
+        throw new Error("No token received from the server");
+      }
+
+      setToken(token);
+      const config = {
+        headers: {
+          Authorization: "Bearer " + token,
+        },
+      };
+      const userResponse = await axios.get(
+        "https://altcode-api.onrender.com/api/user",
+        config
+      );
+      const userData = userResponse.data;
+      setUser(userData);
+      setLoginError("");
+      setToken(token);
+      setLoginError("");
+      setIsLoggedIn(true);
       navigate("/");
     } catch (error) {
       setLoginError("Wrong email or password");
