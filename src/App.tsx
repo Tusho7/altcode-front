@@ -32,7 +32,7 @@ function App() {
     }
     try {
       const response = await axios.post(
-        "https://altcode-api.onrender.com/api/auth/signup",
+        import.meta.env.VITE_URL_LINK + "/auth/signup",
         formData
       );
       setUser(response.data.user);
@@ -58,8 +58,6 @@ function App() {
     localStorage.removeItem("token");
     setUser(null);
     setIsLoggedIn(false);
-    console.log("user", user);
-    console.log("logout islogedin:", isLoggedIn);
   };
 
   const handleLoginClick = async (e: { preventDefault: () => void }) => {
@@ -67,7 +65,7 @@ function App() {
 
     try {
       const response = await axios.post(
-        "https://altcode-api.onrender.com/api/user/login",
+        import.meta.env.VITE_URL_LINK + "/user/login",
         {
           email,
           password,
@@ -95,7 +93,7 @@ function App() {
         },
       };
       const userResponse = await axios.get(
-        "https://altcode-api.onrender.com/api/user",
+        import.meta.env.VITE_URL_LINK + "/user",
         config
       );
       const userData = userResponse.data;

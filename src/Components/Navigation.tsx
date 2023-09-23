@@ -40,7 +40,7 @@ function Navigation({ isLoggedIn, user, handleLogout }: MainProps) {
                     <div className="flex items-center justify-between mt-10">
                       <div className="flex gap-3 items-center justify-start">
                         <img
-                          src={`https://altcode-api.onrender.com/${user?.avatar}`}
+                          src={`${import.meta.env.VITE_STORAGE_LINK}/${user?.avatar}`}
                           alt="User Avatar"
                           className="rounded-full w-10 h-10"
                         />
