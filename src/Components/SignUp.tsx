@@ -78,7 +78,7 @@ const SignUp = ({
           Sign Up
         </button>
         <div className="flex flex-col gap-5 justify-center items-center text-base sm:text-lg md:text-xl lg:text-2xl pt-3">
-          <p>Already have an account?</p>
+          <p className="text-white">Already have an account?</p>
           <button
             className="bg-transparent border border-white hover:bg-white hover:text-white text-white font-semibold py-2 px-4 w-full rounded-full"
             onClick={() => loginClick("/login")}

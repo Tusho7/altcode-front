@@ -38,8 +38,6 @@ function App() {
       setUser(response.data.user);
       setIsLoggedIn(true);
       navigate("/");
-      console.log("registration:", isLoggedIn);
-      console.log("Register success");
     } catch (error: any) {
       if (error.response && error.response.data) {
         const { error: responseError } = error.response.data;
