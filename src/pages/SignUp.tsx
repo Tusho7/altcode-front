@@ -44,14 +44,19 @@ const SignUp = ({
   return (
     <div className="flex flex-col gap-5 justify-center items-center text-base sm:text-lg md:text-xl lg:text-2xl pt-32 sm:w-52 md:w-72 lg:w-96 m-auto signup-page">
       <form onSubmit={handleSubmitSignUp}>
-       <Input type="text" value={email} onChange={setEmail} placeholder="email" />
-       <Input
+        <Input
+          type="text"
+          value={email}
+          onChange={setEmail}
+          placeholder="email"
+        />
+        <Input
           type="text"
           value={username}
           onChange={setUsername}
           placeholder="Username"
         />
-         <Input
+        <Input
           type="password"
           value={password}
           onChange={setPassword}
@@ -67,13 +72,13 @@ const SignUp = ({
 
         {signupError && <p className="text-red-500 mt-2">{signupError}</p>}
 
-        <button className="bg-transparent border border-white hover:bg-white hover:text-white text-white font-semibold py-2 px-4  w-full mt-5 rounded-full">
+        <button className="bg-transparent border border-white hover:bg-black hover:text-white text-white font-semibold py-2 px-4  w-full mt-5 rounded-full">
           Sign Up
         </button>
         <div className="flex flex-col gap-5 justify-center items-center text-base sm:text-lg md:text-xl lg:text-2xl pt-3">
           <p className="text-white">Already have an account?</p>
           <button
-            className="bg-transparent border border-white hover:bg-white hover:text-white text-white font-semibold py-2 px-4 w-full rounded-full"
+            className="bg-transparent border border-white hover:bg-white hover:text-black text-white font-semibold py-2 px-4 w-full rounded-full"
             onClick={() => loginClick("/login")}
           >
             Login

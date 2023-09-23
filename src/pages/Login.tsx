@@ -32,15 +32,15 @@ const Login = ({
 
         {loginError && <p className="text-red-500 mt-2">{loginError}</p>}
 
-        <button className="bg-transparent border border-white hover:bg-white hover:text-white text-white font-semibold py-2 px-4 rounded w-full mt-5">
+        <button className="bg-transparent border border-white hover:bg-white hover:text-black text-white font-semibold py-2 px-4 rounded w-full mt-5">
           Login
         </button>
         <p className="border-b border-white w-full"></p>
         <div className="flex flex-col gap-5 justify-center items-center text-base sm:text-lg md:text-xl lg:text-2xl pt-3 text-white">
           <p>Don't have an account?</p>
           <button
-            className="bg-transparent border border-white hover:bg-white hover:text-white text-white font-semibold py-2 px-4 rounded w-full"
-            onClick={() => registrationClick("/registration")}
+            className="bg-transparent border border-white hover:bg-white hover:text-black text-white font-semibold py-2 px-4 rounded w-full"
+            onClick={() => registrationClick("/signup")}
           >
             Create new account
           </button>
