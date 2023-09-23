@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import Input from "../form/Input";
 
 const Login = ({
   handleLoginClick,
@@ -16,18 +17,16 @@ const Login = ({
   return (
     <div className="flex flex-col gap-5 justify-center items-center text-base sm:text-lg md:text-xl lg:text-2xl pt-32 sm:w-52 md:w-72 lg:w-96 m-auto signup-page">
       <form onSubmit={handleLoginClick}>
-        <input
+        <Input
           type="text"
           value={email}
-          onChange={(event) => setEmail(event?.target.value)}
-          className="bg-transparent border-b border-white focus:outline-none text-white placeholder-white pl-2 pb-2 w-full"
+          onChange={setEmail}
           placeholder="Email"
         />
-        <input
+        <Input
           type="password"
           value={password}
-          onChange={(event) => setPassword(event?.target.value)}
-          className="bg-transparent border-b border-white focus:outline-none text-white placeholder-white pl-2 pb-2 w-full pt-5"
+          onChange={setPassword}
           placeholder="Password"
         />
 

@@ -46,13 +46,13 @@ const IsMenuOpenContainer = ({
             ) : (
               <div className="flex justify-between items-center mt-10">
                 <Link to="login">
-                  <button className="text-white p-5 bg-slate-800 rounded-full">
+                  <button className="text-white p-2 bg-slate-800 rounded-full">
                     შესვლა
                   </button>
                 </Link>
 
                 <Link to="/signup">
-                  <button className="text-white p-5 bg-slate-800 rounded-full">
+                  <button className="text-white p-2 bg-slate-800 rounded-full">
                     რეგისტრაცია
                   </button>
                 </Link>
